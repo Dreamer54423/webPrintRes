@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Russo+One|Ubuntu+Mono&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/assortment.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+    </div>
+
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="openTabs(event,'film')">Пленки</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTabs(event,'notFilm')">Не пленки</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTabs(event,'other')">Для количества</button>
+    </div>
+
+    <div id="film" class="w3-container w3-border city">
+        <h2>Пленки</h2>
+        <div class="all">
+            <div class='prod'>
+                <Span>Пленки для холодной ламинации, матовая 15 микрон и глянцевая 12 микрон</Span><br>
+                <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+                <div id="count1">0</div>
+                <button onclick="add1(product1, basket, quantity1)">в корзину</button>
+                <button onclick="del1(basket, product1, quantity1)">из корзины</button><br><br>
+            </div>
+
+            <div class='prod'>
+                <span>Пленки для термальной ламинации, втулка 76 мм (3000 м)</span><br>
+                <img src="C:/projects/web/public/src/2.png" alt="none" class='img'><br>
+                <div id="count2">0</div>
+                <button onclick="add2(product2, basket, quantity2)">в корзину</button>
+                <button onclick="del2(basket, product2, quantity2)">из корзины</button><br><br>
+            </div>
+
+            <div class='prod'>
+                <span>Пленки для термальной ламинации, втулка 25мм (200-300м)</span><br>
+                <img src="C:/projects/web/public/src/3.png" alt="none" class='img'><br>
+                <div id="count3">0</div>
+                <button onclick="add3(product3, basket, quantity3)">в корзину</button>
+                <button onclick="del3(basket, product3, quantity3)">из корзины</button><br><br>
+            </div>
+
+            <div class='prod'>
+                <span>Плёнки Soft touch (Вельвет) втулка 25 мм, 76мм</span><br>
+                <img src="C:/projects/web/public/src/10.png" alt="none" class='img'><br>
+                <div id="count10">0</div>
+                <button onclick="add10(product10, basket, quantity10)">в корзину</button>
+                <button onclick="del10(basket, product10, quantity10)">из корзины</button><br><br>
+            </div>
+
+
+            <div class='prod'>
+                <span>Плёнки для офисного ламинатора серия для цифровых печатей пр-ва Ю.Корея</span><br>
+                <img src="C:/projects/web/public/src/11.png" alt="none" class='img'><br>
+                <div id="count11">0</div>
+                <button onclick="add11(product11, basket, quantity11)">в корзину</button>
+                <button onclick="del11(basket, product11, quantity11)">из корзины</button><br><br>
+            </div>
+
+
+            <div class='prod'>
+                <span>Плёнки для выборочной ламинации (для офисного ламинатора) в рулонах пр-во Ю. Корея</span><br>
+                <img src="C:/projects/web/public/src/12.png" alt="none" class='img'><br>
+                <div id="count12">0</div>
+                <button onclick="add12(product12, basket, quantity12)">в корзину</button>
+                <button onclick="del12(basket, product12, quantity12)">из корзины</button><br><br>
+            </div>
+
+
+            <div class='prod'>
+                <span>Плёнки для выборочной ламинации (для офисного ламинатора) в листах А-4 пр-во Ю. Корея</span><br>
+                <img src="C:/projects/web/public/src/13.png" alt="none" class='img'><br>
+                <div id="count13">0</div>
+                <button onclick="add13(product13, basket, quantity13)">в корзину</button>
+                <button onclick="del13(basket, product13, quantity13)">из корзины</button><br><br>
+            </div>
+        </div>
+    </div>
+
+    <div id="notFilm" class="w3-container w3-border city" style="display:none">
+        <h2>Не пленки</h2>
+        <div class="all">
+            <div class='prod'>
+                <span>Скотч: упаковочный, бумажный, двухсторонний, на пористой основе</span><br>
+                <img src="C:/projects/web/public/src/4.png" alt="none" class='img'><br>
+                <div id="count4">0</div>
+                <button onclick="add4(product4, basket, quantity4)">в корзину</button>
+                <button onclick="del4(basket, product4, quantity4)">из корзины</button><br><br>
+            </div>
+
+            <div class='prod'>
+                <span>Спираль переплетная металлическая шаг 2:1 и 3:1. Резанная и в бобинах</span><br>
+                <img src="C:/projects/web/public/src/5.png" alt="none" class='img'><br>
+                <div id="count5">0</div>
+                <button onclick="add5(product5, basket, quantity5)">в корзину</button>
+                <button onclick="del5(basket, product5, quantity5)">из корзины</button><br><br>
+            </div>
+
+            <div class='prod'>
+                <Span>Шнур-ручка с пластиковыми наконечниками для бумажных пакетов текстиль и крафт</Span><br>
+                <img src="C:/projects/web/public/src/7.png" alt="none" class='img'><br>
+                <div id="count7">0</div>
+                <button onclick="add7(product7, basket, quantity7)">в корзину</button>
+                <button onclick="del7(basket, product7, quantity7)">из корзины</button><br><br>
+            </div>
+
+            <div class='prod'>
+                <span>Механизмы для папок 123 мм, 210 мм, 290 мм. двух и четырёх кольцевые</span><br>
+                <img src="C:/projects/web/public/src/9.png" alt="none" class='img'><br>
+                <div id="count9">0</div>
+                <button onclick="add9(product9, basket, quantity9)">в корзину</button>
+                <button onclick="del9(basket, product9, quantity9)">из корзины</button><br><br>
+            </div>
+
+            <div class='prod'>
+                <span>Фольга для горячего тиснения</span><br>
+                <img src="C:/projects/web/public/src/14.png" alt="none" class='img'><br>
+                <div id="count14">0</div>
+                <button onclick="add14(product14, basket, quantity14)">в корзину</button>
+                <button onclick="del14(basket, product14, quantity14)">из корзины</button><br><br>
+            </div>
+
+            <div class='prod'>
+                <span>Пакеты для журналов</span><br>
+                <img src="C:/projects/web/public/src/15.png" alt="none" class='img'><br>
+                <div id="count15">0</div>
+                <button onclick="add15(product15, basket, quantity15)">в корзину</button>
+                <button onclick="del15(basket, product15, quantity15)">из корзины</button><br><br>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="other" class="w3-container w3-border city" style="display:none">
+        <h2>Для количества</h2>
+        <div class="all">
+            <div class='prod'>
+                <span>Лаки, клея для ламинации</span><br>
+                <img src="C:/projects/web/public/src/6.png" alt="none" class='img'><br>
+                <div id="count6">0</div>
+                <button onclick="add6(product6, basket, quantity6)">в корзину</button>
+                <button onclick="del6(basket, product6, quantity6)">из корзины</button><br><br>
+            </div>
+
+            <div class='prod'>
+                <span>Материалы для скрепления блоков</span><br>
+                <img src="C:/projects/web/public/src/8.png" alt="none" class='img'><br>
+                <div id="count8">0</div>
+                <button onclick="add8(product8, basket, quantity8)">в корзину</button>
+                <button onclick="del8(basket, product8, quantity8)">из корзины</button><br><br>
+            </div>
+
+            <div class='prod'>
+                <span>Фольга для горячего тиснения</span><br>
+                <img src="C:/projects/web/public/src/14.png" alt="none" class='img'><br>
+                <div id="count14">0</div>
+                <button onclick="add14(product14, basket, quantity14)">в корзину</button>
+                <button onclick="del14(basket, product14, quantity14)">из корзины</button><br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-dropdown-click">
+        <button
+            onclick="myFunction(); purchases(basket, quantity1, quantity2, quantity3, quantity4, quantity5, quantity6, quantity7, quantity8, quantity9, quantity10, quantity11, quantity12, quantity13, quantity14, quantity15, quantity16, count1, count2, count3, count4, count5, count6, count7, count8, count9, count10, count11, count12, count13, count14, count15, count16)"
+            class="w3-button w3-black">корзина</button>
+        <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+        </div>
+    </div>
+
+    <br><button onclick="onMain()" class="button" style="vertical-align:middle"><span>На главную</span></button><br>
+
+    <footer>
+        <i class="material-icons">
+            local_phone
+        </i>
+        <div class="divo2" id="contacts">
+            <div>Режим работы
+                <div class="border"><span>Пн-Пт</span><span>10:00-18:00</span></div>
+                <div class="border"><span>Сб-Вс</span><span>Выходной</span></div>
+            </div>
+            <div>Адрес
+                <div class="contacts">Алматы, Байзакова 194, оф 302</div>
+            </div>
+            <div>Контакты
+                <div class="contacts"><span>+7 727 378-07-81</span><br>
+                    <span>+7 727 378-03-14</span><br><br>
+                    <span>print_res@mail.ru</span>
+                </div>
+            </div>
+        </div>
+        <div class="year">2019 by Niki</div>
+    </footer>
+
+    <script src="js/assortment.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/dropdown.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <div class="all">
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+            <button onclick="add1(product1, basket, quantity1)">в корзину</button>
+            <div id="count1">0</div>
+            <button onclick="del1(basket, product1, quantity1)">убрать из корзины</button><br><br>
+        </div>
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+            <button onclick="add2(product2, basket, quantity2)">в корзину</button>
+            <div id="count2">0</div>
+            <button onclick="del2(basket, product2, quantity2)">убрать из корзины</button><br><br>
+        </div>
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+            <button onclick="add3(product3, basket, quantity3)">в корзину</button>
+            <div id="count3">0</div>
+            <button onclick="del3(basket, product3, quantity3)">убрать из корзины</button><br><br>
+        </div>
+
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+            <button onclick="add4(product4, basket, quantity4)">в корзину</button>
+            <div id="count4">0</div>
+            <button onclick="del4(basket, product4, quantity4)">убрать из корзины</button><br><br>
+        </div>
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+            <button onclick="add5(product5, basket, quantity5)">в корзину</button>
+            <div id="count5">0</div>
+            <button onclick="del5(basket, product5, quantity5)">убрать из корзины</button><br><br>
+        </div>
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+            <button onclick="add6(product6, basket, quantity6)">в корзину</button>
+            <div id="count6">0</div>
+            <button onclick="del6(basket, product6, quantity6)">убрать из корзины</button><br><br>
+        </div>
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+            <button onclick="add7(product7, basket, quantity7)">в корзину</button>
+            <div id="count7">0</div>
+            <button onclick="del7(basket, product7, quantity7)">убрать из корзины</button><br><br>
+        </div>
+
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br><button
+                onclick="add8(product8, basket, quantity8)">в корзину</button>
+            <div id="count8">0</div>
+            <button onclick="del8(basket, product8, quantity8)">убрать из корзины</button><br><br>
+        </div>
+
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+            <button onclick="add9(product9, basket, quantity9)">в корзину</button>
+            <div id="count9">0</div>
+            <button onclick="del9(basket, product9, quantity9)">убрать из корзины</button><br><br>
+        </div>
+
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+            <button onclick="add10(product10, basket, quantity10)">в корзину</button>
+            <div id="count10">0</div>
+            <button onclick="del10(basket, product10, quantity10)">убрать из корзины</button><br><br>
+        </div>
+
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br><button
+                onclick="add11(product11, basket, quantity11)">в корзину</button>
+            <div id="count11">0</div>
+            <button onclick="del11(basket, product11, quantity11)">убрать из корзины</button><br><br>
+        </div>
+
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br><button
+                onclick="add12(product12, basket, quantity12)">в корзину</button>
+            <div id="count12">0</div>
+            <button onclick="del12(basket, product12, quantity12)">убрать из корзины</button><br><br>
+        </div>
+
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+            <button onclick="add13(product13, basket, quantity13)">в корзину</button>
+            <div id="count13">0</div>
+            <button onclick="del13(basket, product13, quantity13)">убрать из корзины</button><br><br>
+        </div>
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+            <button onclick="add14(product14, basket, quantity14)">в корзину</button>
+            <div id="count14">0</div>
+            <button onclick="del14(basket, product14, quantity14)">убрать из корзины</button><br><br>
+        </div>
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+            <button onclick="add15(product15, basket, quantity15)">в корзину</button>
+            <div id="count15">0</div>
+            <button onclick="del15(basket, product15, quantity15)">убрать из корзины</button><br><br>
+        </div>
+
+
+        <div class='prod'>
+            <img src="C:/projects/web/public/src/1.png" alt="none" class='img'><br>
+            <button onclick="add16(product16, basket, quantity16)">в корзину</button>
+            <div id="count16">0</div>
+            <button onclick="del16(basket, product16, quantity16)">убрать из корзины</button><br><br>
+        </div> -->

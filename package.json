@@ -1,0 +1,15 @@
+{
+  "name": "printresurs",
+  "version": "1.0.0",
+  "description": "web for work",
+  "main": "index.js",
+  "scripts": {
+    "test": "printres"
+  },
+  "repository": {
+    "type": "git",
+    "url": "printresurs"
+  },
+  "author": "me",
+  "license": "ISC"
+}
